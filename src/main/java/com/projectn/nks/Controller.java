@@ -18,7 +18,7 @@ public class Controller {
     }
 
     @PostMapping("/post")
-    public String postMethodName(@RequestBody String entity) {
+    public person postMethodName(@RequestBody person entity) {
         return entity;
     }
 
