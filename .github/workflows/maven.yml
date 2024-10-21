@@ -23,4 +23,4 @@ jobs:
     - name: jar file
       run: mvn clean package
     - name: Execute jar file
-      run: sudo kill -9 `sudo lsof -t -i:8080` & sudo java -jar /home/ec2-user/actions-runner/ls/projectn/projectn/target/nks-0.0.1-SNAPSHOT.jar &
+      run: sudo kill -9 `sudo lsof -t -i:8080` & sudo java -jar /home/ec2-user/.m2/repository/com/projectn/nks/0.0.1-SNAPSHOT/nks-0.0.1-SNAPSHOT.jar &
