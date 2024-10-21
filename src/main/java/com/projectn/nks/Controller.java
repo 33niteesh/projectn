@@ -11,7 +11,6 @@ public class Controller {
 
     @GetMapping("/get")
     public String getMethodName(@RequestParam String param) {
-
         
         return "Hello, " + param;
     }
