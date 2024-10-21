@@ -26,7 +26,7 @@ public class Controller {
     }
 
     @PutMapping("path/{id}")
-    public String putMethodName(@PathVariable String id, @RequestBody String entity) {
+    public person putMethodName(@PathVariable String id, @RequestBody person entity) {
         return entity;
     }
 }
