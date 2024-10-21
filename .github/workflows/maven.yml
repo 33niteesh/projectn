@@ -26,6 +26,8 @@ jobs:
         distribution: 'temurin'
     - name: Build with Maven
       run: mvn clean install
+    - name: build mvn
+      run: mvn -B package --file pom.xml
     - name: jar file
       run: mvn clean package
     - name: Execute jar file
